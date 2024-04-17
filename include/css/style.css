@@ -1,4 +1,10 @@
 /* =================reset css starts here================= */
+
+@font-face {
+  font-family: 'YMWMFont';
+  src: url('../fonts/AaYiMengWeiMa-JianFan.ttf') format('truetype');
+}
+
 * {
 	margin:0;
 	padding:0;
@@ -674,11 +680,11 @@ header.fixed .logo small {
 }
 .heading-container h3 {
 	margin:0;
+	font-family:"YMWMFont", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size:48px;
 	color:#ce9f51;
 }
 .partition {
-	margin:0;
 	text-align:center;
 	position:relative;
 	overflow:hidden;
