@@ -5,14 +5,15 @@
 ## 差的点
 
 - [x] moment
-- [ ] 首页放婚纱照
 - [x] 单人介绍
 - [x] 细节优化
 - [ ] 百度地图替代谷歌地图
-- [ ] 背景音乐
-- [ ] 背景大字
-- [ ] 速度优化
+- [ ] 首页放婚纱照
 - [ ] 图片替换
+- [ ] 速度优化
+- [ ] 背景音乐
+  [metowolf/MetingJS: :cake: A powerful plugin connect APlayer and Meting](https://github.com/metowolf/MetingJS)
+- [ ] 背景大字
 - [ ] 页面内相册
   [Fancyapps UI - Robust JavaScript UI Component Library | Fancyapps](https://fancyapps.com/)或者[dimsemenov/PhotoSwipe: JavaScript image gallery for mobile and desktop, modular, framework independent](https://github.com/dimsemenov/PhotoSwipe)
 
