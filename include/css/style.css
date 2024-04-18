@@ -9,9 +9,9 @@
 
 @font-face {
     font-family: 'FZXiJinLJW';
-    src: url('../fonts/FZXiJinLJW.eot') format('embedded-opentype'),
-        url('../fonts/FZXiJinLJW.woff2') format('woff2'),
-        url('../fonts/FZXiJinLJW.woff') format('woff'),
+    src: url('../fonts/FZXIJINLJW.eot') format('embedded-opentype'),
+        url('../fonts/FZXIJINLJW.woff2') format('woff2'),
+        url('../fonts/FZXIJINLJW.woff') format('woff'),
 }
 
 * {
