@@ -255,4 +255,18 @@ $(window).scroll(function() {
 });
 
 
+const record = document.querySelector('.record');
+    let isPlaying = true;
+    let animation = record.style.animation;
+
+    function toggleAnimation() {
+        if (isPlaying) {
+            record.style.animationPlayState = 'paused';
+            isPlaying = false;
+        } else {
+            record.style.animationPlayState = 'running';
+            isPlaying = true;
+        }
+    }
+
  
