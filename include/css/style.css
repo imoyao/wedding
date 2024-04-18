@@ -1,8 +1,17 @@
 /* =================reset css starts here================= */
 
 @font-face {
-  font-family: 'YMWMFont';
-  src: url('../fonts/AaYiMengWeiMa-JianFan.ttf') format('truetype');
+    font-family: 'YMWMFont';
+    src: url('../fonts/AaYimengweimjf.eot');
+    src: url('../fonts/AaYimengweimjf.eot') format('embedded-opentype'),
+        url('../fonts/AaYimengweimjf.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'FZXiJinLJW';
+    src: url('../fonts/FZXiJinLJW.eot') format('embedded-opentype'),
+        url('../fonts/FZXiJinLJW.woff2') format('woff2'),
+        url('../fonts/FZXiJinLJW.woff') format('woff'),
 }
 
 * {
@@ -1039,6 +1048,7 @@ ul.registry-shop li a:hover {
 
 /* ================= Contact Section start ================= */
 .say-love-container {
+  font-family:"FZXiJinLJW", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
