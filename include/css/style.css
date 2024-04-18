@@ -9,9 +9,9 @@
 
 @font-face {
     font-family: 'FZXiJinLJW';
-    src: url('../fonts/FZXIJINLJW.eot') format('embedded-opentype'),
-        url('../fonts/FZXIJINLJW.woff2') format('woff2'),
-        url('../fonts/FZXIJINLJW.woff') format('woff'),
+    src: url('../fonts/FZXiJinLJWoOeuCzi.subset.eot') format('embedded-opentype'),
+        url('../fonts/FZXiJinLJWoOeuCzi.subset.woff2') format('woff2'),
+        url('../fonts/FZXiJinLJWoOeuCzi.subset.woff') format('woff'),
 }
 
 * {
@@ -65,6 +65,7 @@ body {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center top;
+ 	overflow-x: hidden;
 }
 .container {
 	width:100%;
@@ -674,7 +675,7 @@ header.fixed .logo small {
 	-ms-transform:rotate(-2.87deg);
 	-webkit-transform:rotate(-2.87deg);
 	transform:rotate(-2.87deg);
-	background:#CC3536;
+	background:#90001e;
 	-webkit-backface-visibility:hidden;
 	-moz-backface-visibility:hidden;
 	backface-visibility:hidden;
@@ -691,7 +692,7 @@ header.fixed .logo small {
 	margin:0;
 	font-family:"YMWMFont", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size:48px;
-	color:#ce9f51;
+	color:#eacd77;
 }
 .partition {
 	text-align:center;
