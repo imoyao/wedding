@@ -30,6 +30,11 @@
 
 <script>hljs.highlightAll();</script>
 
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -422,6 +427,27 @@ True </code></pre>
         
         
 </section>
+
+<div class="record">
+        <button class="play-button" onclick="toggleAnimation()">Play</button>
+    </div>
+<!--<div class="record" onclick="toggleAnimation()">-->
+
+    <meting-js
+	server="netease"
+	type="song"
+	mini=true
+	autoplay=true
+	volume=0.6
+	theme="#F0A1A8"
+	id="28258464">
+</meting-js>
+ <div class="guangp">
+              <i class="guxz xuanz"></i>
+              <i class="dy"></i>
+              <i class="xy"></i>
+              <i class="gp audio-stick skewing"></i>
+</div>
 <!-- =====================  Gallery Section End  ===================== --> 
 <!-- =====================  Go top arrow  ===================== --> 
 <a href="index.html#!" class="go-top"><i class="ti-arrow-up"></i></a> 

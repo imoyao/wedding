@@ -1192,6 +1192,125 @@ footer {
 	bottom:25px;
 }
 /* ================= go top end ================= */
+
+/* ================= go top start ================= */
+.aplayer.aplayer-narrow{
+	width:40px!important;
+	height:40px;
+	border-radius:50%;
+}
+.aplayer.aplayer-narrow .aplayer-body, .aplayer.aplayer-narrow .aplayer-pic{
+	border-radius:50%!important;
+	width:40px!important;
+	height:40px!important;
+}
+.bg-music,.bg-music:focus {
+	position:fixed;
+	border-radius:50%;
+	right:25px;
+	bottom:105px;
+	width:40px;
+	height:40px;
+	float:left;
+	/*text-align:center;*/
+	/*line-height:40px;*/
+	/*opacity:0;*/
+	/*visibility:hidden;*/
+	/*font-size:18px;*/
+	/*background:#F0A1A8;*/
+	/*line-height:40px;*/
+	/*box-shadow:-5px 5px 10px rgba(0,0,0,0.1);*/
+	z-index:999999999;
+	/*color:#333;*/
+}
+.bg-music.show {
+	opacity:1;
+	visibility:visible;
+	bottom:25px;
+}
+
+.record {
+            width: 60px;
+            height: 60px;
+            background-color: #cccccc;
+            border-radius: 50%;
+            position: relative;
+            animation: spin 30s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+.guangp {
+    position: relative;
+    display: inline-block;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    width: 355px;
+    height: 321px;
+    text-align: center;
+}
+ .guangp .guxz {
+    display: inline-block;
+    width: 359px;
+    height: 359px;
+    background: url(http://code.wubin.work/code/css/heijiao-rotate/2.png);
+}
+.guangp .dy {
+    position: absolute;
+    top: 71px;
+    right: -109px;
+    width: 85px;
+    height: 82px;
+    background: url(http://code.wubin.work/code/css/heijiao-rotate/1.png) no-repeat -356px -18px;
+}
+.guangp .xy {
+    position: absolute;
+    top: 71px;
+    right: -108px;
+    z-index: 3;
+    width: 85px;
+    height: 85px;
+    background: url(http://code.wubin.work/code/css/heijiao-rotate/1.png) no-repeat -450px -18px;
+}
+.guangp .gp {
+    position: absolute;
+    top: 115px;
+    right: -70px;
+    width: 173px;
+    height: 272px;
+    background: url(http://code.wubin.work/code/css/heijiao-rotate/1.png) no-repeat -350px -138px;
+    transition: all .6s ease-in-out;
+    transform: rotate(-32deg);
+    transform-origin: right top;
+}
+
+/* 黑胶旋转 */
+.guangp .xuanz {
+    animation: circleRoate 200s;
+    animation-timing-function: linear;
+}
+.guangp .gp.skewing {
+    transform: rotate(0);
+}
+@keyframes circleRoate{
+    from{
+        transform:rotate(0) infinite
+    }
+    to{
+        transform:rotate(7600deg)
+    }
+}
+
+/* ================= go top end ================= */
 /* ============================= */
 /* ! Layout for ipad lanscape */
 /* ============================= */
