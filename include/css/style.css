@@ -1194,120 +1194,68 @@ footer {
 /* ================= go top end ================= */
 
 /* ================= go top start ================= */
-.aplayer.aplayer-narrow{
-	width:40px!important;
-	height:40px;
-	border-radius:50%;
+.music-player{
+    float:right;
+    position:fixed;
+    right: 25px;
+    z-index:999999999;
 }
-.aplayer.aplayer-narrow .aplayer-body, .aplayer.aplayer-narrow .aplayer-pic{
-	border-radius:50%!important;
-	width:40px!important;
-	height:40px!important;
+/* 移动端 */
+ @media screen and (max-width: 767px) {
+    .music-player {
+        top: 60px;
+    }
 }
-.bg-music,.bg-music:focus {
-	position:fixed;
-	border-radius:50%;
-	right:25px;
-	bottom:105px;
-	width:40px;
-	height:40px;
-	float:left;
-	/*text-align:center;*/
-	/*line-height:40px;*/
-	/*opacity:0;*/
-	/*visibility:hidden;*/
-	/*font-size:18px;*/
-	/*background:#F0A1A8;*/
-	/*line-height:40px;*/
-	/*box-shadow:-5px 5px 10px rgba(0,0,0,0.1);*/
-	z-index:999999999;
-	/*color:#333;*/
-}
-.bg-music.show {
-	opacity:1;
-	visibility:visible;
-	bottom:25px;
+/* PC端 */
+@media screen and (min-width: 768px) {
+    .music-player {
+        top: 15px;
+    }
 }
 
-.record {
-            width: 60px;
-            height: 60px;
-            background-color: #cccccc;
-            border-radius: 50%;
-            position: relative;
-            animation: spin 30s linear infinite;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-
-.guangp {
+.record-player {
     position: relative;
-    display: inline-block;
-    padding-top: 80px;
-    padding-bottom: 70px;
-    width: 355px;
-    height: 321px;
-    text-align: center;
-}
- .guangp .guxz {
-    display: inline-block;
-    width: 359px;
-    height: 359px;
-    background: url(http://code.wubin.work/code/css/heijiao-rotate/2.png);
-}
-.guangp .dy {
-    position: absolute;
-    top: 71px;
-    right: -109px;
-    width: 85px;
-    height: 82px;
-    background: url(http://code.wubin.work/code/css/heijiao-rotate/1.png) no-repeat -356px -18px;
-}
-.guangp .xy {
-    position: absolute;
-    top: 71px;
-    right: -108px;
-    z-index: 3;
-    width: 85px;
-    height: 85px;
-    background: url(http://code.wubin.work/code/css/heijiao-rotate/1.png) no-repeat -450px -18px;
-}
-.guangp .gp {
-    position: absolute;
-    top: 115px;
-    right: -70px;
-    width: 173px;
-    height: 272px;
-    background: url(http://code.wubin.work/code/css/heijiao-rotate/1.png) no-repeat -350px -138px;
-    transition: all .6s ease-in-out;
-    transform: rotate(-32deg);
-    transform-origin: right top;
+    width: 40px;
+    height: 40px;
+    animation: spin 3s linear infinite;
+    animation-play-state: paused;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A1A8;
+    /* 更加细腻的线条效果和明暗对比 */
+    /* background: radial-gradient(circle, #F0A1B2 0%, #F0A1A9 5%, #F1A1A8 10%, #F0A0A8 15%, #F0A2A8 20%, #F2A1A8 25%, #F0A1A7 30%, #EFA1A8 35%, #F0A1AA 40%, #F09FA8 45%, #F0A3A8 50%, #F0A1AB 55%, #F3A1A8 60%, #F0A1A6 65%, #EEA1A8 70%, #F0A4A8 75%, #F0A1AC 80%, #F4A1A8 85%, #F0A1A5 90%, #000 95%, #EDA1A8 100%);*/
+    background: #81cac3;
 }
 
-/* 黑胶旋转 */
-.guangp .xuanz {
-    animation: circleRoate 200s;
-    animation-timing-function: linear;
+.aplayer {
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.guangp .gp.skewing {
-    transform: rotate(0);
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-@keyframes circleRoate{
-    from{
-        transform:rotate(0) infinite
-    }
-    to{
-        transform:rotate(7600deg)
-    }
+
+.aplayer.aplayer-narrow .aplayer-body, .aplayer.aplayer-narrow .aplayer-pic {
+    border-radius: 50%;
+    width: 25px!important;
+    height: 25px!important;
+}
+
+#aplayer{
+    left: 15px;
+    top: 15px;
+}
+
+.aplayer.aplayer-narrow {
+    border-radius: 50% !important;
+    width: 25px!important;
+    height: 25px;
 }
 
 /* ================= go top end ================= */
