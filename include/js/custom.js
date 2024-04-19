@@ -256,46 +256,46 @@ $(window).scroll(function() {
 
 
 // 初始化APlayer
-    var player = new APlayer({
-      container: document.getElementById('aplayer'),
-      mini: true,
-      autoplay: true, // 尝试自动播放
-      loop: 'all',
-      volume: 0.52,
-      theme:"#F0A1A8",
-      //   TODO: 修改背景音乐
-      audio: [
-      {
-        name: 'song name',
-        artist: 'artist name',
-        url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160210870.mp3',
-      },
-      {
-        name: 'song name',
-        artist: 'artist name',
-        url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160758008.mp3',
-      },
-      {
-        name: 'song name',
-        artist: 'artist name',
-        url: 'https://rainymood.com/audio1112/0.mp3',
-      }
-      ]
-    });
+var player = new APlayer({
+  container: document.getElementById('aplayer'),
+  mini: true,
+  autoplay: true, // 尝试自动播放
+  loop: 'all',
+  volume: 0.52,
+  theme:"#F0A1A8",
+  //   TODO: 修改背景音乐
+  audio: [
+  {
+    name: 'song name',
+    artist: 'artist name',
+    url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160210870.mp3',
+  },
+  {
+    name: 'song name',
+    artist: 'artist name',
+    url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160758008.mp3',
+  },
+  {
+    name: 'song name',
+    artist: 'artist name',
+    url: 'https://rainymood.com/audio1112/0.mp3',
+  }
+  ]
+});
 
-    var recordPlayer = document.querySelector('.record-player');
+var recordPlayer = document.querySelector('.record-player');
 
-    // 控制唱片旋转
-    player.on('play', function () {
-      recordPlayer.style.animationPlayState = 'running';
-    });
+// 控制唱片旋转
+player.on('play', function () {
+  recordPlayer.style.animationPlayState = 'running';
+});
 
-    player.on('pause', function () {
-      recordPlayer.style.animationPlayState = 'paused';
-    });
+player.on('pause', function () {
+  recordPlayer.style.animationPlayState = 'paused';
+});
 
 //     页面加载完毕后尝试播放
-    window.onload = function() {
-        player.play();
-    };
+window.onload = function() {
+    player.play();
+};
  
