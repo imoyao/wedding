@@ -266,22 +266,41 @@ var player = new APlayer({
   //   TODO: 修改背景音乐
   audio: [
   {
-    name: 'song name',
-    artist: 'artist name',
-    url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160210870.mp3',
+    name: 'Purple Passion',
+    artist: 'Barcelona',
+    url: 'https://music.163.com/song/media/outer/url?id=1844228355.mp3',
   },
   {
-    name: 'song name',
-    artist: 'artist name',
-    url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160758008.mp3',
+    name: 'I Choose You',
+    artist: 'Barcelona',
+    url: 'https://music.163.com/song/media/outer/url?id=28258464.mp3',
+  },  {
+    name: 'Flightless Bird, American Mouth',
+    artist: 'Barcelona',
+    url: 'https://music.163.com/song/media/outer/url?id=26679470.mp3',
   },
   {
-    name: 'song name',
+    name: '竹竿舞',
     artist: 'artist name',
-    url: 'https://rainymood.com/audio1112/0.mp3',
-  }
+    url: 'https://ws.stream.qqmusic.qq.com/C4000029Etsh0ohHbj.m4a',
+  },{
+    name: 'First love',
+    artist: 'artist name',
+    url: 'https://rs-sycdn.kuwo.cn/39bac6f203efb34b0ae0dd1ab9c4c2c6/662283da/resource/n2/79/54/3699367692.mp3',
+  },
+  {
+    name: 'Sweets',
+    artist: 'artist name',
+    url: 'https://lw-sycdn.kuwo.cn/dfc90121e827afaedd1b16dd123ee6c6/662281ad/resource/30106/trackmedia/M500001UxHlo1lZr02.mp3',
+  },
+  {
+    name: 'break',
+    artist: 'artist name',
+    url: 'https://music.163.com/song/media/outer/url?id=4896733.mp3',
+  },
   ]
 });
+
 
 var recordPlayer = document.querySelector('.record-player');
 
