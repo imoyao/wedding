@@ -266,6 +266,11 @@ $(window).scroll(function() {
       //   TODO: 修改背景音乐
       audio: [
       {
+        name: 'I Choose You',
+        artist: 'Barcelona',
+        url: 'http://music.163.com/song/media/outer/url?id=28258464.mp3',
+      },
+      {
         name: 'song name',
         artist: 'artist name',
         url: 'http://sp.9sky.com/convert/song/music/1038551/20240219160210870.mp3',
