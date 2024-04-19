@@ -1192,6 +1192,73 @@ footer {
 	bottom:25px;
 }
 /* ================= go top end ================= */
+
+/* ================= go top start ================= */
+.music-player{
+    float:right;
+    position:fixed;
+    right: 25px;
+    z-index:999999999;
+}
+/* 移动端 */
+ @media screen and (max-width: 767px) {
+    .music-player {
+        top: 60px;
+    }
+}
+/* PC端 */
+@media screen and (min-width: 768px) {
+    .music-player {
+        top: 15px;
+    }
+}
+
+.record-player {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    animation: spin 3s linear infinite;
+    animation-play-state: paused;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A1A8;
+    /* 更加细腻的线条效果和明暗对比 */
+    /* background: radial-gradient(circle, #F0A1B2 0%, #F0A1A9 5%, #F1A1A8 10%, #F0A0A8 15%, #F0A2A8 20%, #F2A1A8 25%, #F0A1A7 30%, #EFA1A8 35%, #F0A1AA 40%, #F09FA8 45%, #F0A3A8 50%, #F0A1AB 55%, #F3A1A8 60%, #F0A1A6 65%, #EEA1A8 70%, #F0A4A8 75%, #F0A1AC 80%, #F4A1A8 85%, #F0A1A5 90%, #000 95%, #EDA1A8 100%);*/
+    background: #81cac3;
+}
+
+.aplayer {
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.aplayer.aplayer-narrow .aplayer-body, .aplayer.aplayer-narrow .aplayer-pic {
+    border-radius: 50%;
+    width: 25px!important;
+    height: 25px!important;
+}
+
+#aplayer{
+    left: 15px;
+    top: 15px;
+}
+
+.aplayer.aplayer-narrow {
+    border-radius: 50% !important;
+    width: 25px!important;
+    height: 25px;
+}
+
+/* ================= go top end ================= */
 /* ============================= */
 /* ! Layout for ipad lanscape */
 /* ============================= */
