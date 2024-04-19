@@ -11,7 +11,7 @@
 - [ ] 首页放婚纱照
 - [ ] 图片替换
 - [ ] 速度优化
-- [ ] 背景音乐
+- [x] 背景音乐
   [metowolf/MetingJS: :cake: A powerful plugin connect APlayer and Meting](https://github.com/metowolf/MetingJS)
 - [ ] 背景大字
 - [ ] 页面内相册
