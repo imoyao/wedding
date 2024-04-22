@@ -319,22 +319,22 @@ var player = new APlayer({
   },
   {
     name: '竹竿舞',
-    artist: 'artist name',
+    artist: '周杰伦',
     url: 'https://ws.stream.qqmusic.qq.com/C4000029Etsh0ohHbj.m4a',
-  },{
-    name: 'First love',
-    artist: 'artist name',
-    url: 'https://rs-sycdn.kuwo.cn/39bac6f203efb34b0ae0dd1ab9c4c2c6/662283da/resource/n2/79/54/3699367692.mp3',
   },
   {
     name: 'Sweets',
-    artist: 'artist name',
-    url: 'https://lw-sycdn.kuwo.cn/dfc90121e827afaedd1b16dd123ee6c6/662281ad/resource/30106/trackmedia/M500001UxHlo1lZr02.mp3',
+    artist: '宫本笑里',
+    url: 'https://music.163.com/song/media/outer/url?id=22670759.mp3',
   },
   {
     name: 'break',
     artist: 'artist name',
     url: 'https://music.163.com/song/media/outer/url?id=4896733.mp3',
+  },{
+    name: '胡桃鉗-糖梅仙子之舞',
+    artist: '柴可夫斯基',
+    url: 'https://music.163.com/song/media/outer/url?id=1302617416.mp3',
   },
   ]
 });
