@@ -152,81 +152,126 @@ $(".clock").countdown(weddingDate, function(event) {
 /*==========================*/	
 /* Google Map */	
 /*==========================*/
-	if($('#map-canvas').length != 0){
-		var map;
-		function initialize() {
-			var mapOptions = {
-				zoom: 15,
-				scrollwheel: false,
-			 	center: new google.maps.LatLng(25.932884, 83.569633),
-			 	styles: [
-							{"stylers": [{ hue: "#ce9f51" },
-							{ saturation: -100 },
-							{ lightness: 0 }]},
-    					{
-					      "featureType": "road",
-					      "elementType": "labels",
-					      "stylers": [{"visibility": "off"}]
-					    },
-					    {
-					      "featureType": "road",
-					      "elementType": "geometry",
-					      "stylers": [{"lightness": 100},
-					            {"visibility": "simplified"}]
-					    }
-			 	]
-			};
-			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-			var image = 'include/images/map-marker.png';
-			var myLatLng = new google.maps.LatLng(25.932884, 83.569633);
-			var beachMarker = new google.maps.Marker({
-				position: myLatLng,
-				map: map,
-				icon: image
-			 });
-		}
+//	if($('#map-canvas').length != 0){
+//		var map;
+//		function initialize() {
+//			var mapOptions = {
+//				zoom: 15,
+//				scrollwheel: false,
+//			 	center: new google.maps.LatLng(25.932884, 83.569633),
+//			 	styles: [
+//							{"stylers": [{ hue: "#ce9f51" },
+//							{ saturation: -100 },
+//							{ lightness: 0 }]},
+//    					{
+//					      "featureType": "road",
+//					      "elementType": "labels",
+//					      "stylers": [{"visibility": "off"}]
+//					    },
+//					    {
+//					      "featureType": "road",
+//					      "elementType": "geometry",
+//					      "stylers": [{"lightness": 100},
+//					            {"visibility": "simplified"}]
+//					    }
+//			 	]
+//			};
+//			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+//			var image = 'include/images/map-marker.png';
+//			var myLatLng = new google.maps.LatLng(25.932884, 83.569633);
+//			var beachMarker = new google.maps.Marker({
+//				position: myLatLng,
+//				map: map,
+//				icon: image
+//			 });
+//		}
+//
+//		google.maps.event.addDomListener(window, 'load', initialize);
+//	}
 
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
-
+var map = new BMapGL.Map('map-canvas');
+map.centerAndZoom(new BMapGL.Point(107.816706,35.049437), 15);
+map.enableScrollWheelZoom(true);
+// 创建点标记
+var marker = new BMapGL.Marker(new BMapGL.Point(107.816706,35.049437));
+//var marker2 = new BMapGL.Marker(new BMapGL.Point(116.404, 39.915));
+//var marker3 = new BMapGL.Marker(new BMapGL.Point(116.395, 39.935));
+//var marker4 = new BMapGL.Marker(new BMapGL.Point(116.415, 39.931));
+// 在地图上添加点标记
+//TODO: 修改marker + 文字描述
+map.addOverlay(marker);
  
  
- if($('#map-canvas2').length != 0){
-		var map;
-		function initialize() {
-			var mapOptions = {
-				zoom: 15,
-				scrollwheel: false,
-			 	center: new google.maps.LatLng(25.932884, 83.569633),
-			 	styles: [
-							{"stylers": [{ hue: "#ce9f51" },
-							{ saturation: -100 },
-							{ lightness: 0 }]},
-    					{
-					      "featureType": "road",
-					      "elementType": "labels",
-					      "stylers": [{"visibility": "off"}]
-					    },
-					    {
-					      "featureType": "road",
-					      "elementType": "geometry",
-					      "stylers": [{"lightness": 100},
-					            {"visibility": "simplified"}]
-					    }
-			 	]
-			};
-			map = new google.maps.Map(document.getElementById('map-canvas2'), mapOptions);
-			var image = 'include/images/map-marker.png';
-			var myLatLng = new google.maps.LatLng(25.932884, 83.569633);
-			var beachMarker = new google.maps.Marker({
-				position: myLatLng,
-				map: map,
-				icon: image
-			 });
-		}
+// if($('#map-canvas2').length != 0){
+//		var map;
+//		function initialize() {
+//			var mapOptions = {
+//				zoom: 15,
+//				scrollwheel: false,
+//			 	center: new google.maps.LatLng(25.932884, 83.569633),
+//			 	styles: [
+//							{"stylers": [{ hue: "#ce9f51" },
+//							{ saturation: -100 },
+//							{ lightness: 0 }]},
+//    					{
+//					      "featureType": "road",
+//					      "elementType": "labels",
+//					      "stylers": [{"visibility": "off"}]
+//					    },
+//					    {
+//					      "featureType": "road",
+//					      "elementType": "geometry",
+//					      "stylers": [{"lightness": 100},
+//					            {"visibility": "simplified"}]
+//					    }
+//			 	]
+//			};
+//			map = new google.maps.Map(document.getElementById('map-canvas2'), mapOptions);
+//			var image = 'include/images/map-marker.png';
+//			var myLatLng = new google.maps.LatLng(25.932884, 83.569633);
+//			var beachMarker = new google.maps.Marker({
+//				position: myLatLng,
+//				map: map,
+//				icon: image
+//			 });
+//		}
+//
+//		google.maps.event.addDomListener(window, 'load', initialize);
+//	}
 
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
+var map = new BMapGL.Map('map-canvas2');
+    var point = new BMapGL.Point(116.51397, 39.73517);
+    map.centerAndZoom(point, 11);
+    map.enableScrollWheelZoom(true);
+
+    var driving = new BMapGL.DrivingRouteLine(map, {
+        renderOptions: {
+            map: map,
+            autoViewport: true,
+            enableDragging: true,
+        }
+    })
+    var driving2 = new BMapGL.DrivingRoute(map, {
+        renderOptions: {
+            map: map,
+            autoViewport: true,
+        }
+    })
+
+    var start = new BMapGL.Point(116.236532, 39.904113661);
+    var start2 = new BMapGL.Point(116.310791, 40.003419);
+    var end = new BMapGL.Point(116.545486, 40.006040);
+    var end2 = new BMapGL.Point(116.486419, 39.877282);
+    var way2 = new BMapGL.Point(116.36315661025989,39.904113661);
+    var way1 = new BMapGL.Point(116.49257333444989,39.87920464090217);
+    var way = '39.87920464090217,116.49257333444989|39.87806279099342,116.49218746174857'
+
+    driving.search(start, end, {
+            waypoints: [way2]
+        });
+    driving2.search(start2, end2, {
+
+        });
 
 /*==========================*/	
 /* Header fix */	
