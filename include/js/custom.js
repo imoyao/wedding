@@ -190,17 +190,27 @@ $(".clock").countdown(weddingDate, function(event) {
 //	}
 
 var map = new BMapGL.Map('map-canvas');
-map.centerAndZoom(new BMapGL.Point(107.816706,35.049437), 15);
+var point = new BMapGL.Point(107.816706,35.049437)
+map.centerAndZoom(point, 15);
 map.enableScrollWheelZoom(true);
 // 创建点标记
-var marker = new BMapGL.Marker(new BMapGL.Point(107.816706,35.049437));
-//var marker2 = new BMapGL.Marker(new BMapGL.Point(116.404, 39.915));
-//var marker3 = new BMapGL.Marker(new BMapGL.Point(116.395, 39.935));
-//var marker4 = new BMapGL.Marker(new BMapGL.Point(116.415, 39.931));
+var myIcon = new BMapGL.Icon("/include/img/map-marker.png", new BMapGL.Size(26, 26));
+var marker = new BMapGL.Marker(point, {
+    icon: myIcon
+});
 // 在地图上添加点标记
 //TODO: 修改marker + 文字描述
 map.addOverlay(marker);
- 
+var opts = {
+    width: 200,
+    height: 100,
+    title: '期待你的到来'
+};
+var infoWindow = new BMapGL.InfoWindow('提示：沿着十字路口向西往村里走，走到路口后向北拐。找不到地址请电话联系本人哦', opts);
+// 点标记添加点击事件
+marker.addEventListener('click', function () {
+    map.openInfoWindow(infoWindow, point); // 开启信息窗口
+});
  
 // if($('#map-canvas2').length != 0){
 //		var map;
@@ -240,38 +250,60 @@ map.addOverlay(marker);
 //	}
 
 var map = new BMapGL.Map('map-canvas2');
-    var point = new BMapGL.Point(116.51397, 39.73517);
-    map.centerAndZoom(point, 11);
-    map.enableScrollWheelZoom(true);
+var point = new BMapGL.Point(116.51397, 39.73517);
+map.centerAndZoom(point, 11);
+map.enableScrollWheelZoom(true);
 
-    var driving = new BMapGL.DrivingRouteLine(map, {
-        renderOptions: {
-            map: map,
-            autoViewport: true,
-            enableDragging: true,
-        }
-    })
-    var driving2 = new BMapGL.DrivingRoute(map, {
-        renderOptions: {
-            map: map,
-            autoViewport: true,
-        }
-    })
+var driving = new BMapGL.DrivingRouteLine(map, {
+    renderOptions: {
+        map: map,
+        autoViewport: true,
+        enableDragging: false,
+    }
+})
+var driving1 = new BMapGL.DrivingRouteLine(map, {
+    renderOptions: {
+        map: map,
+        autoViewport: true,
+        enableDragging: false,
+    }
+})
+var driving2 = new BMapGL.DrivingRoute(map, {
+    renderOptions: {
+        map: map,
+        autoViewport: true,
+        enableDragging: false,
+    }
+})
+var driving3= new BMapGL.DrivingRoute(map, {
+    renderOptions: {
+        map: map,
+        autoViewport: true,
+        enableDragging: false,
+    }
+})
 
-    var start = new BMapGL.Point(116.236532, 39.904113661);
-    var start2 = new BMapGL.Point(116.310791, 40.003419);
-    var end = new BMapGL.Point(116.545486, 40.006040);
-    var end2 = new BMapGL.Point(116.486419, 39.877282);
-    var way2 = new BMapGL.Point(116.36315661025989,39.904113661);
-    var way1 = new BMapGL.Point(116.49257333444989,39.87920464090217);
-    var way = '39.87920464090217,116.49257333444989|39.87806279099342,116.49218746174857'
+var startXiAnBeiZhan = new BMapGL.Point(108.945421,34.381032);
+var startXiAn = new BMapGL.Point(108.953509,34.265619);
+var startXiAnXianYangInternationalAirport = new BMapGL.Point(108.768576,34.442079);
+var startXiYang = new BMapGL.Point(108.715205,34.336191);
+var end = new BMapGL.Point(107.816706,35.049437);
+var tingKouStation = new BMapGL.Point(107.949848,35.103598);
 
-    driving.search(start, end, {
-            waypoints: [way2]
-        });
-    driving2.search(start2, end2, {
+driving.search(startXiAnBeiZhan, end, {
+    waypoints: [tingKouStation]
+});
 
-        });
+driving1.search(startXiAn, end, {
+    waypoints: [tingKouStation]
+});
+
+driving2.search(startXiYang, end, {
+    waypoints: [tingKouStation]
+});
+driving3.search(startXiAnXianYangInternationalAirport, end, {
+    waypoints: [tingKouStation]
+});
 
 /*==========================*/	
 /* Header fix */	
