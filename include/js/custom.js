@@ -266,15 +266,16 @@ var player = new APlayer({
   //   TODO: 修改背景音乐
   audio: [
   {
+    name: 'I Choose You',
+    artist: 'Barcelona',
+    url: 'https://music.163.com/song/media/outer/url?id=28258464.mp3',
+  },
+  {
     name: 'Purple Passion',
     artist: 'Barcelona',
     url: 'https://music.163.com/song/media/outer/url?id=1844228355.mp3',
   },
   {
-    name: 'I Choose You',
-    artist: 'Barcelona',
-    url: 'https://music.163.com/song/media/outer/url?id=28258464.mp3',
-  },  {
     name: 'Flightless Bird, American Mouth',
     artist: 'Barcelona',
     url: 'https://music.163.com/song/media/outer/url?id=26679470.mp3',
