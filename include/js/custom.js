@@ -211,43 +211,6 @@ var infoWindow = new BMapGL.InfoWindow('提示：沿着十字路口向西往村�
 marker.addEventListener('click', function () {
     map.openInfoWindow(infoWindow, point); // 开启信息窗口
 });
- 
-// if($('#map-canvas2').length != 0){
-//		var map;
-//		function initialize() {
-//			var mapOptions = {
-//				zoom: 15,
-//				scrollwheel: false,
-//			 	center: new google.maps.LatLng(25.932884, 83.569633),
-//			 	styles: [
-//							{"stylers": [{ hue: "#ce9f51" },
-//							{ saturation: -100 },
-//							{ lightness: 0 }]},
-//    					{
-//					      "featureType": "road",
-//					      "elementType": "labels",
-//					      "stylers": [{"visibility": "off"}]
-//					    },
-//					    {
-//					      "featureType": "road",
-//					      "elementType": "geometry",
-//					      "stylers": [{"lightness": 100},
-//					            {"visibility": "simplified"}]
-//					    }
-//			 	]
-//			};
-//			map = new google.maps.Map(document.getElementById('map-canvas2'), mapOptions);
-//			var image = 'include/images/map-marker.png';
-//			var myLatLng = new google.maps.LatLng(25.932884, 83.569633);
-//			var beachMarker = new google.maps.Marker({
-//				position: myLatLng,
-//				map: map,
-//				icon: image
-//			 });
-//		}
-//
-//		google.maps.event.addDomListener(window, 'load', initialize);
-//	}
 
 var map = new BMapGL.Map('map-canvas2');
 var point = new BMapGL.Point(116.51397, 39.73517);
@@ -316,10 +279,7 @@ var scroll = $(window).scrollTop();
         $("header").removeClass("fixed");
     }
 	
-});	
-
-	
- 
+});
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
