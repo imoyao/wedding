@@ -199,7 +199,6 @@ var marker = new BMapGL.Marker(point, {
     icon: myIcon
 });
 // 在地图上添加点标记
-//TODO: 修改marker + 文字描述
 map.addOverlay(marker);
 var opts = {
     width: 200,
@@ -354,4 +353,16 @@ player.on('pause', function () {
 window.onload = function() {
     player.play();
 };
- 
+
+// 相册功能
+Fancybox.bind('[data-fancybox="gallery"]', {
+    loop: true,
+    animationEffect: "fade",
+    transitionEffect: "slide",
+    thumbs: {
+      autoStart: true
+    },
+    Images: {
+      protected: true
+    },
+});
