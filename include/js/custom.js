@@ -212,35 +212,34 @@ marker.addEventListener('click', function () {
     map.openInfoWindow(infoWindow, point); // 开启信息窗口
 });
 
-var map = new BMapGL.Map('map-canvas2');
-var point = new BMapGL.Point(116.51397, 39.73517);
-map.centerAndZoom(point, 11);
-map.enableScrollWheelZoom(true);
+// 自驾路线规划
+var mapCarLine = new BMapGL.Map('map-canvas2');
+mapCarLine.enableScrollWheelZoom(true);
 
-var driving = new BMapGL.DrivingRouteLine(map, {
+var driving = new BMapGL.DrivingRouteLine(mapCarLine, {
     renderOptions: {
-        map: map,
+        map: mapCarLine,
         autoViewport: true,
         enableDragging: false,
     }
 })
-var driving1 = new BMapGL.DrivingRouteLine(map, {
+var driving1 = new BMapGL.DrivingRouteLine(mapCarLine, {
     renderOptions: {
-        map: map,
+        map: mapCarLine,
         autoViewport: true,
         enableDragging: false,
     }
 })
 var driving2 = new BMapGL.DrivingRoute(map, {
     renderOptions: {
-        map: map,
+        map: mapCarLine,
         autoViewport: true,
         enableDragging: false,
     }
 })
-var driving3= new BMapGL.DrivingRoute(map, {
+var driving3= new BMapGL.DrivingRoute(mapCarLine, {
     renderOptions: {
-        map: map,
+        map: mapCarLine,
         autoViewport: true,
         enableDragging: false,
     }
