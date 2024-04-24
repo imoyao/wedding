@@ -1166,6 +1166,16 @@ footer {
     font-size:25px;
     color:#F0A1A8;
 }
+
+#gallery-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.nGY2NavigationbarItem {
+    background:#f0a1a8!important
+}
 /* ================= go top start ================= */
 .go-top,.go-top:focus {
 	position:fixed;

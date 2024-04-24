@@ -14,8 +14,10 @@
 - [x] 背景音乐
   [metowolf/MetingJS: :cake: A powerful plugin connect APlayer and Meting](https://github.com/metowolf/MetingJS)
 - [ ] 背景大字
-- [ ] 页面内相册
-  [Fancyapps UI - Robust JavaScript UI Component Library | Fancyapps](https://fancyapps.com/)或者[dimsemenov/PhotoSwipe: JavaScript image gallery for mobile and desktop, modular, framework independent](https://github.com/dimsemenov/PhotoSwipe)
+- [x] 页面内相册
+  1. [Fancyapps UI - Robust JavaScript UI Component Library | Fancyapps](https://fancyapps.com/)或者[dimsemenov/PhotoSwipe: JavaScript image gallery for mobile and desktop, modular, framework independent](https://github.com/dimsemenov/PhotoSwipe)
+  2. [visual builder](https://nanogallery2.nanostudio.org/builder.html)
+  3. [讓相簿圖片在網頁上呈現各種拼貼效果﹍jQuery 畫廊外掛＠WFU BLOG](https://ww.wfublog.com/2019/08/nanogallery2-mosaic-layout.html)
 
 ## 其他选择
 
