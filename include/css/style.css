@@ -1166,18 +1166,15 @@ footer {
     font-size:25px;
     color:#F0A1A8;
 }
-.fancybox__container{
-    top: 60px!important;
-}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
+#gallery-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
-.grid-item {
-  margin-bottom: 10px;
+.nGY2NavigationbarItem {
+    background:#f0a1a8!important
 }
 /* ================= go top start ================= */
 .go-top,.go-top:focus {

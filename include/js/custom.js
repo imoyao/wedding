@@ -354,15 +354,161 @@ window.onload = function() {
     player.play();
 };
 
-// 相册功能
-Fancybox.bind('[data-fancybox="gallery"]', {
-    loop: true,
-    animationEffect: "fade",
-    transitionEffect: "slide",
-    thumbs: {
-      autoStart: true
+$("#gallery-content").nanogallery2({
+    galleryDisplayTransitionDuration: 1500,
+    galleryMosaic :
+    [
+        { w: 2, h: 2, c: 1, r: 1 },
+        { w: 1, h: 1, c: 3, r: 1 },
+        { w: 1, h: 1, c: 3, r: 2 },
+        { w: 1, h: 2, c: 4, r: 1 },
+        { w: 2, h: 1, c: 5, r: 1 },
+        { w: 2, h: 2, c: 5, r: 2 },
+        { w: 1, h: 1, c: 4, r: 3 },
+        { w: 2, h: 1, c: 2, r: 3 },
+        { w: 1, h: 1, c: 1, r: 3 },
+        ],
+    thumbnailAlignment: "justified",
+    thumbnailHeight: 600,
+    thumbnailWidth: 800,
+    thumbnailBaseGridHeight: 300,
+    thumbnailDisplayTransition: "flipDown",
+    thumbnailDisplayTransitionDuration: 600,
+    thumbnailDisplayInterval: 30,
+    galleryRenderDelay: 100,
+    galleryDisplayMode: "rows",
+    galleryMaxRows: 1,
+    galleryFilterTags: true,
+    galleryFilterTagsMode: 'single',
+    displayBreadcrumb : true,
+    galleryLastRowFull : true,
+    galleryDisplayTransition: 'rotateX',
+    galleryDisplayTransitionDuration: 500,
+    thumbnailL1GutterWidth: 0,
+    thumbnailL1GutterHeight: 0,
+    thumbnailBorderHorizontal: 0,
+    thumbnailBorderVertical: 0,
+    thumbnailL1BuildInit2: "image_scale_1.20",
+    thumbnailL1HoverEffect2: "thumbnail_scale_1.00_1.05_300|image_translateX_-20px_20px",
+    thumbnailToolbarImage: null,
+    thumbnailToolbarAlbum: null,
+    thumbnailLabel: {
+    display: false,
+    position: "onBottomOverImage",
+    hideIcons: false,
+    titleFontSize: "1em",
+    align: "left",
+    titleMultiLine: true,
+    displayDescription: false
     },
-    Images: {
-      protected: true
+    gallerySorting: "random",
+    galleryTheme: {
+    thumbnail: {
+    titleShadow: "none",
+    descriptionShadow: "none",
+    titleColor: "#fff"
     },
+    navigationBreadcrumb: {
+    background: "#3C4B5B"
+    },
+    navigationFilter: {
+    background: "#2E7C7F",
+    backgroundSelected: "#19676B",
+    color: "#eee"
+    }
+    },
+    XviewerTheme: {
+       barBackground: "rgba(240, 161, 168, 0.7)"
+    },
+    viewerToolbar: {
+        "display": false,
+    },
+    viewerTools: {
+    topLeft: "label",
+    topRight: "pageCounter,playPauseButton,fullscreenButton,zoomButton,closeButton"
+    },
+    touchAnimation: true,
+    locationHash: true,
+    items: [
+    {
+    src: "include/images/hero-img1.jpg",
+    srct: "include/images/hero-img1.jpg",
+    title: "测试",
+    description: "十多个发动机体育课",
+    tags: "全部 婚礼 游玩 亲亲",
+    },
+    {
+    src: "include/images/hero-img2.jpg",
+    srct: "include/images/hero-img2.jpg",
+    title: "pic 2",
+    tags: "全部 婚礼 游玩 亲亲",
+    },{
+    src: "include/gallery/1243546.jpg",
+    srct: "include/gallery/1243546.jpg",
+    tags: "全部 婚礼 游玩 亲亲",
+    title: "pic 3"
+    },
+    {
+    src: "include/images/hero-img2.jpg",
+    srct: "include/images/hero-img2.jpg",
+    tags: "全部 游玩",
+    title: "pic 4"
+    },{
+    src: "include/gallery/1243546.jpg",
+    srct: "include/gallery/1243546.jpg",
+    tags: "全部 婚礼",
+    title: "pic 5"
+    },
+    {
+    src: "include/images/hero-img2.jpg",
+    srct: "include/images/hero-img2.jpg",
+    tags: "全部",
+    title: "pic 6"
+    },{
+    src: "include/gallery/1243546.jpg",
+    srct: "include/gallery/1243546.jpg",
+    tags: "全部",
+    title: "pic 7"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 8"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 9"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 10"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 11"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 12"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 13"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 14"
+    },{
+    src: "include/gallery/98765.jpg",
+    srct: "include/gallery/98765.jpg",
+    tags: "全部",
+    title: "pic 15"
+    }
+    ]
 });
