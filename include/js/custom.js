@@ -332,7 +332,7 @@ var player = new APlayer({
   },{
     name: '胡桃鉗-糖梅仙子之舞',
     artist: '柴可夫斯基',
-    url: 'https://music.163.com/song/media/outer/url?id=1302617416.mp3',
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714030223925/%E6%9F%B4%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%EF%BC%9A%E7%B3%96%E6%A2%85%E4%BB%99%E5%AD%90%E4%B9%8B%E8%88%9E%E2%80%A7%E8%83%A1%E6%A1%83%E9%89%97.mp3',
   },
   ]
 });
