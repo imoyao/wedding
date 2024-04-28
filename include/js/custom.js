@@ -300,39 +300,34 @@ var player = new APlayer({
   theme:"#F0A1A8",
   //   TODO: 修改背景音乐
   audio: [
-  {
-    name: 'I Choose You',
-    artist: 'Barcelona',
-    url: 'https://music.163.com/song/media/outer/url?id=28258464.mp3',
-  },
-  {
+   {
     name: 'Purple Passion',
     artist: 'Barcelona',
-    url: 'https://music.163.com/song/media/outer/url?id=1844228355.mp3',
-  },
-  {
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714047986322/Purple Passion.mp3',
+  }, {
     name: 'Flightless Bird, American Mouth',
     artist: 'Barcelona',
-    url: 'https://music.163.com/song/media/outer/url?id=26679470.mp3',
-  },
-  {
-    name: '竹竿舞',
-    artist: '周杰伦',
-    url: 'https://ws.stream.qqmusic.qq.com/C4000029Etsh0ohHbj.m4a',
-  },
-  {
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714048231244/Flightless%20Bird,%20American%20Mouth.mp3',
+  }, {
     name: 'Sweets',
     artist: '宫本笑里',
-    url: 'https://music.163.com/song/media/outer/url?id=22670759.mp3',
-  },
-  {
-    name: 'break',
-    artist: 'artist name',
-    url: 'https://music.163.com/song/media/outer/url?id=4896733.mp3',
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714047681155/Sweets.mp3',
+  }, {
+    name: 'I Choose You',
+    artist: 'Barcelona',
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714047435607/I Choose You.mp3',
   },{
     name: '胡桃鉗-糖梅仙子之舞',
     artist: '柴可夫斯基',
     url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714030223925/%E6%9F%B4%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%EF%BC%9A%E7%B3%96%E6%A2%85%E4%BB%99%E5%AD%90%E4%B9%8B%E8%88%9E%E2%80%A7%E8%83%A1%E6%A1%83%E9%89%97.mp3',
+  },{
+    name: '出嫁',
+    artist: '罗大佑',
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714046860125/%E5%87%BA%E5%AB%81.mp3',
+  }, {
+    name: '竹竿舞',
+    artist: '周杰伦',
+    url: 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1714047209636/竹竿舞.mp3',
   },
   ]
 });
