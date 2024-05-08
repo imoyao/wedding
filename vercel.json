@@ -2,6 +2,7 @@
     "rewrites": [
       {"source": "/moments/", "destination": "https://love-moments.vercel.app/"},
       {"source": "/moments/:match*", "destination": "https://love-moments.vercel.app/:match*"},
+      {"source": "/moments/:match*/", "destination": "https://love-moments.vercel.app/:match*/"},
       {"source": "/gallery/", "destination": "https://love-gallery-two.vercel.app/"},
       {"source": "/gallery/:path*", "destination": "https://love-gallery-two.vercel.app/:path*"},
       {"source": "/gallery/:path*/", "destination": "https://love-gallery-two.vercel.app/:path*/"}
