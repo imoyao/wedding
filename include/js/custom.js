@@ -139,9 +139,9 @@ if ($('.go-top').length) {
 var weddingDate = '2025/05/02'
 $(".clock").countdown(weddingDate, function(event) {
     if (event.passed) {
-        $(".clock-head-text").html("我们已经结婚……")
+        $(".clock-head-text").html("我们本应该结婚……")
       }else{
-        $(".clock-head-text").html("距离我们结婚还有……" )
+        $(".clock-head-text").html("距离我们原来打算结婚的日子……" )
         }
     $(".clock").html('<span>' + event.days + ' <b>days</b></span> <span>' + event.hours + '<b>hours</b></span> <span>' + event.minutes + '<b>minutes</b></span> <span>' + event.seconds + '<b>seconds</b></span>');
 });
