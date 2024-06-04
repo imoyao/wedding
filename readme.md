@@ -19,6 +19,10 @@
   2. [visual builder](https://nanogallery2.nanostudio.org/builder.html)
   3. [讓相簿圖片在網頁上呈現各種拼貼效果﹍jQuery 畫廊外掛＠WFU BLOG](https://ww.wfublog.com/2019/08/nanogallery2-mosaic-layout.html)
 
+## 其他链接
+
+[文件直链平台 - 涟漪](https://up.ly93.cc/)
+
 ## 其他选择
 
 [Veley ⁠/ Ross — Wedding](https://veleyross.wedding/?ref=onepagelove)
